@@ -21,6 +21,24 @@
     display: none;
 }
 
+/* table select link replace with book icon */
+#tables a.select:before {
+    content: "\1F4D6";
+    visibility: visible;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+#tables a.select {
+    visibility: hidden;
+    word-spacing: -999px;
+    letter-spacing: -999px;
+}
+
+#tables a.select:hover {
+    text-decoration: none;
+}
+
 /* menu styles */
 #menu {
     position: fixed;

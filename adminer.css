@@ -1,8 +1,44 @@
+/* places sql textarea on top */
+#content {
+    display: flex;
+    flex-direction: column;
+}
 
-div#content { display: flex; flex-direction: column; }
+#content > h2 {
+    order: -2;
+}
 
-div#content > h2 { order: -2; }
+#content > form#form {
+    order: -1;
+}
 
-div#content > form#form { order: -1; }
+#content table {
+    display: inline-block;
+}
 
-div#content table {  }
+/* removes search in all tables */
+#content > h3#tables-views + form > fieldset:first-child {
+    display: none;
+}
+
+/* menu styles */
+#menu {
+    position: fixed;
+}
+
+#tables {
+    overflow-y: scroll !important;
+    height: 70vh;
+    resize: horizontal;
+}
+
+/*
+
+TODO
+
+make menu resizable in width using
+#menu {
+    width: initial;
+}
+
+*/

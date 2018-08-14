@@ -1,0 +1,8 @@
+
+div#content { display: flex; flex-direction: column; }
+
+div#content > h2 { order: -2; }
+
+div#content > form#form { order: -1; }
+
+div#content table {  }

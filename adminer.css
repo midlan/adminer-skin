@@ -42,6 +42,8 @@
 /* menu styles */
 #menu {
     position: fixed;
+    padding: 0px;
+    background-color: white;
 }
 
 #tables {

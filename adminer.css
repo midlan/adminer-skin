@@ -52,18 +52,33 @@
     resize: horizontal;
 }
 
-#menu a[href="https://www.adminer.org/"]:after {
-    content: " produkce";
-    text-transform: uppercase;
-    display: block;
-    width: 274px;
-    background-color: tomato;
-    font-size: 30px;
-    font-style: initial;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+/*
+
+TODO
+
+make menu resizable in width using
+#menu {
+    width: initial;
+}
+
+*/
+
+/* production alert */
+@document domain("your-production-domain.com") { /* https://developer.mozilla.org/en-US/docs/Web/CSS/@document */
+
+    #menu a[href="https://www.adminer.org/"]:after {
+        content: "PRODUCTION";
+        text-transform: uppercase;
+        display: block;
+        width: 274px;
+        background-color: tomato;
+        font-size: 30px;
+        font-style: initial;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
 }

@@ -50,6 +50,7 @@
     overflow-y: scroll !important;
     height: 70vh;
     resize: horizontal;
+    background-color: #fff;
 }
 
 #menu a[href="https://www.adminer.org/"]:after {
